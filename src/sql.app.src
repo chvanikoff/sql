@@ -1,0 +1,11 @@
+{application, sql, [
+	{description, "SQL helper"},
+	{vsn, "1"},
+	{registered, []},
+	{applications, [
+		kernel,
+		stdlib
+	]},
+	{mod, {sql, []}},
+	{env, []}
+]}.
