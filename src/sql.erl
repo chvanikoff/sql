@@ -35,7 +35,6 @@ prepare_argument(AB) when is_binary(AB) ->
 	end.
 
 escape([]) -> [];
-
 escape([$' | Alpha]) -> [92, 39 | escape(Alpha)];
 escape([A | Alpha]) -> [A | escape(Alpha)].
 
